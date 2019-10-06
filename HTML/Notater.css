@@ -1,0 +1,79 @@
+
+.fagsideMeny {
+    position: fixed;
+    overflow: hidden;
+    width: 80%;
+    list-style-type: none;
+    margin-left: 20%;          /*Denne er for å posisjonere menyen vertikalt*/
+    background-color: #291211;
+    display: inline-block;
+    top: 15%;                  /*Denne er for å posisjonere menyen horisontalt*/
+}
+
+
+.fagsideMeny a:hover {
+     color: white;   /* Vet ikke hvilken effekt som kan gjøre dette fint*/
+}
+
+.fagsideMeny .active {
+    background-color: #F8CF2C;
+    color: #291211;
+}
+
+.fagsideMeny a {             /*Linkene i menyen*/
+    float: left;
+    color: #FFFEE6;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 16px;
+}
+
+
+
+/* Under her kommer alt som skal funke på dropdown meny-funksjon*/
+.fagsideDrop {
+  float: left;
+  overflow: hidden;
+  margin-right: 2%;
+}
+
+.fagsideDrop .fagsideDropBtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.fagsideDropInnhold {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+}
+
+.fagsideDrop:hover .fagsideDropBtn {
+  color: white;
+}
+
+.fagsideDropInnhold a {
+  float: none;
+  color: white;
+  background-color: #291211;
+  padding: 5%;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.fagsideDropInnhold a:hover {
+    color: white;
+}
+
+.fagsideDrop:hover .fagsideDropInnhold {
+  display: block;
+}
